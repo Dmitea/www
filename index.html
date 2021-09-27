@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body,
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    /*............*/
+    .new-font {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+    }
+
+    h2 {
+      color: rgba(253, 17, 17, 0.829);
+      font-size: 200%;
+    }
+
+    .bold-text {
+      font-weight: bold;
+    }
+
+    .white-text {
+      color: white;
+    }
+
+    .firstP-text {
+      color: orange;
+      font-size: 30pt;
+      letter-spacing: 0.1em;
+    }
+
+    .blackback {
+      background: #000000;
+    }
+
+    .block1.up {
+      width: 1100px;
+      margin: auto;
+      padding-top: 40px;
+      < !-отступы по бокам>
+    }
+
+    .block1 {
+      width: 900px;
+      margin: auto;
+    }
+
+    .block3 {
+      width: 900px;
+      margin: auto;
+      padding-bottom: 10px;
+      < !-отступы по бокам>
+    }
+
+    .block4 {
+      width: 900px;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 40px;
+      < !-отступы по бокам>
+    }
+
+    .block2 {
+      width: auto;
+      margin-left: 25px;
+    }
+
+    .nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      align-items: center;
+      font-size: 22px;
+    }
+
+    .exp {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .exp li {
+      margin: 10px 0;
+    }
+
+    .achievements {
+      list-style-image: url("./icon-ok.png");
+    }
+
+    .str-points {
+      list-style-image: url("./icon-ok-2.png");
+    }
+
+    .nav li {
+      display: inline-block;
+      margin: 10px;
+      padding: 5px;
+      cursor: pointer;
+      /*-нажимаемая кнопка*/
+
+    }
+
+    .B-text {
+      color: purple;
+      font-size: 40pt;
+    }
+
+    .rubrica {
+      color: #FFFF00;
+      font-size: 16pt
+    }
+
+    .certif {
+      height: 350px;
+    }
+
+    .paragraph {
+      margin: 12px 0;
+    }
+
+    .hands-bg {
+      background-image: url("https://pbs.twimg.com/profile_banners/858263323246198784/1493820731/1500x500");
+      background-position: center;
+      background-size: cover;
+      < !-полностью перекроет все>
+    }
+
+    .virash {
+      letter-spacing: 0.1em;
+      line-height: 40px;
+      }
+      .inst-text{
+        color: #6e6e6e;
+      }
+      .img-right {
+    transform: rotate(180deg);
+   }
+  </style>
+</head>
+
+<body class="white-text new-font blackback">
+  <div>
+    <!- общий>
+      <div class="block1 up">
+        <!- ограничение ширины>
+          <ul class="nav white-text padding-inline-start: 0%;">
+            <li><span class="bold-text firstP-text">Дмитрий<br>Бумагин</span></li>
+            <li>Опыт работы</li>
+            <li>Достижения</li>
+            <li>Сильные стороны</li>
+            <li>Личное</li>
+            <li>Контакт</li>
+          </ul>
+          <p align="center"><img src="https://c.wallhere.com/photos/61/b9/monochrome-100096.jpg!d" width="600"
+              height="400" alt="Портрет">
+          </p>
+          <h1 class="white-text">Бизнес-аналитик с <span class="B-text">Б</span>ольшой буквы</h1>
+          <p class="white-text">
+            Бизнес-аналитик 1С. На данный момент работаю в логистической сфере деятельности.
+          </p>
+          <p class="white-text">
+            Развиваю крупнейшую, государственную компанию <span class="bold-text">ООО"Почта России"</span>
+          </p>
+
+      </div>
+
+
+      <div class="block3">
+        <h2>Опыт работы</h2>
+        <ol class="exp">
+          <li>
+            <span class="bold-text">Январь 2017 - Январь 2019: </span>"Движение - развитие предприятия"
+          </li>
+          <li>
+            <span class="bold-text">Январь 2019 - май 2021: </span>"Курьер сервис экспресс"
+          </li>
+          <li>
+            <span class="bold-text">Май 2021 - наст. время: </span>"Почта России"
+          </li>
+        </ol>
+      </div>
+
+
+      <div class="block4">
+        <h2 style="margin-top: 10px;">Мои самые большие достижения</h2>
+        <p>Главные профессиональные достижения:</p>
+        <ul class="achievements">
+          <li>Пройдены профессиональные курсы по 1С </li>
+          <li>Участие в более 30 лекций(вебинаров)</li>
+          <li>Успешно пройдены аттестации по 1С</li>
+          <li>Получены сертификаты повышающую квалификацию</li>
+        </ul>
+      </div>
+      <div class="block2">
+        <p align="center">Рубрика: <i><span class="rubrica">"Blood and sweat"</span></i></p><br>
+
+        <img class="certif"
+          src="https://1.downloader.disk.yandex.ru/preview/6faeaf3f960df8e2a60d01847c3534df6979f641ba87315f3777b8dea07cca78/inf/Cb1xBQxsLOKVKSvLB6-CncT2RKE00CuE-IXiUmN6bpZHW96YEANu5S7ZJBGahvPaKtIj5EfIpyPpEQw5CoH1uQ%3D%3D?uid=79399225&filename=%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%20%D0%9F%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0_page-0001.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=79399225&tknv=v2&size=1583x757"
+          alt="">
+        <img class="certif"
+          src="https://1.downloader.disk.yandex.ru/preview/c10cbde5f5f1087ec3348718ea5332db892a79fd9194eea4d4bc02dc56e1f91c/inf/GULappsqPvZNLoI101HmcpnGx5jklc7Mz5_WCiHvEFIyUhFSn--qBYnYZ1EXPz2LowHybqWHUs3B45DQhz2QZg%3D%3D?uid=79399225&filename=%D0%A0%D0%BE%D0%B7%D0%BD%D0%B8%D1%86%D0%B0%208_page-0001.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=79399225&tknv=v2&size=1583x757"
+          alt="">
+        <img class="certif"
+          src="https://4.downloader.disk.yandex.ru/preview/c1ffcc0e3772a6cda78a632de602d34807bcaec31b20ac32e9d919987043a68c/inf/1HFDag_OE8HirJTWXELwVsT2RKE00CuE-IXiUmN6bpbAlHuq2l1LDXOvMIjQJWRjiU1SWq8GYNn6FvA8sn8VlA%3D%3D?uid=79399225&filename=%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%20%D0%91%D0%A3%D0%A5_page-0001.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=79399225&tknv=v2&size=1583x757"
+          alt="">
+        <img class="certif"
+          src="https://4.downloader.disk.yandex.ru/preview/a04d4948e1a2f66b1175f6bf8de67ce3b5cc872f39d2b65847f8516f0c48a39f/inf/G7fsQVps2gXZzpgkVR6ibMT2RKE00CuE-IXiUmN6bpZiSOoRVbPn3KomfeDk2bAuwP-K7LzGB153YcIDO0Vs3Q%3D%3D?uid=79399225&filename=%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%97%D0%A3%D0%9F_page-0001.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=79399225&tknv=v2&size=1583x757"
+          alt="">
+        <img class="certif"
+          src="https://2.downloader.disk.yandex.ru/preview/c82da19410f000fe891eaf181730e860367f8765d15b3cf84497d6883b9be23b/inf/BkannsU43FUDwD_OmFSh4cT2RKE00CuE-IXiUmN6bpajC_eVZ4VFQkIj-zxK-9mnWfwUCRn6Rt6MNXtNRutlCw%3D%3D?uid=79399225&filename=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%BB%D0%B5%D0%B9%208_page-0001.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=79399225&tknv=v2&size=1583x757"
+          alt="">
+        <img class="certif"
+          src="https://2.downloader.disk.yandex.ru/preview/590c3bbe7269b1d2efc779b642aa846080d0d5a3912fa0b76bfc45538e27e7d6/inf/JyG8YI4Pnys_0t3XMJXFKURgQuhLT99Zpv7IGmVgJEtSBc1FvjhzxVVBHmhbYW4nLjDjUrgWgNGgE5npMdrOzg%3D%3D?uid=79399225&filename=%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=79399225&tknv=v2&size=1583x757"
+          alt="">
+      </div>
+
+      <div class="block1">
+        <h2>Мои сильные качества</h2>
+        <ul class="str-points">
+          <li>Дисциплинированность</li>
+          <li>Стрессоустойчивость</li>
+          <li>Целеустремленность</li>
+          <li>Самостоятельность</li>
+          <li>Коммуникабельность</li>
+          <li>Нацеленность на результат</li>
+          <li>Желание расти и развиваться</li>
+          <li>Свободное время посвещяю знаниям</li>
+          <li>Трудоголик</li>
+        </ul>
+      </div>
+
+      <div class="hands-bg">
+        <div class="block1">
+          <h2>Мои значимые выражения</h2>
+          <p>
+            <i class="virash">«Как бы не было, уже было...»</i><br>
+            <i class="virash">«С каждой прочитанной книгой я понимаю, как мало я
+              знаю»</i><br>
+            <i class="virash">"You pray that happens."</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="block1">
+        <h2>Коротко обо мне</h2>
+        <p>
+          Учусь, развиваюсь. Надеюсь, что мои беcсонные ночи дадут результат:
+        </p>
+      </div>
+      <p align="center">
+        <img
+          src="https://mobimg.b-cdn.net/v3/fetch/df/df31a508e352c47e9aa9290e99c40929.jpeg"
+          width="600" alt="Конец" class="img-right">
+      </p>
+
+      <div class="block1">
+        <h2>Контакт</h2>
+        <form action="">
+          <input type="text" name="" id="">
+        </form>
+      </div>
+      <div class="block1">
+        <p align="center" class="inst-text"><a class="inst-text" href="https://www.instagram.com/itea.online/" title="Истаграмм">Сделано при подержки ITEA</a></p>
+      </div>
+  </div>
+</body>
+
+</html>
