@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
     html,
@@ -12,7 +12,7 @@
     p {
       padding: 0;
       margin: 0;
-    }
+        }
 
     /*............*/
     .new-font {
@@ -44,26 +44,26 @@
     }
 
     .block1.up {
-      width: 1100px;
+      width: 1200px;
       margin: auto;
       padding-top: 40px;
       < !-отступы по бокам>
     }
 
     .block1 {
-      width: 1100px;
+      width: 1200px;
       margin: auto;
     }
 
     .block3 {
-      width: 1100px;
+      width: 1200px;
       margin: auto;
       padding-bottom: 10px;
       < !-отступы по бокам>
     }
 
     .block4 {
-      width: 1100px;
+      width: 1200px;
       margin: auto;
       padding-top: 10px;
       padding-bottom: 40px;
@@ -109,8 +109,13 @@
       margin: 10px;
       padding: 5px;
       cursor: pointer;
+      font-size: x-large;
       /*-нажимаемая кнопка*/
+    }
 
+    .nav li a {
+      text-decoration: none;
+      color: rgba(253, 17, 17, 0.829);
     }
 
     .B-text {
@@ -140,36 +145,77 @@
 
     .virash {
       letter-spacing: 0.1em;
-      line-height: 40px;
-      }
-      .inst-text{
-        color: #6e6e6e;
-      }
-      .img-right {
-    transform: rotate(180deg);
-   }
+      line-height: 25px;
+      font-style: italic;
+    }
+
+    .inst-text {
+      color: #6e6e6e;
+    }
+
+    .img-right {
+      transform: rotate(180deg);
+    }
+
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+      padding: 20px 0;
+      margin-bottom: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      outline: none;
+      width: 1200px;
+      border: none;
+      border: 3px solid rgba(253, 17, 17, 0.829);
+      ;
+    }
+
+    textarea {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height: 100px;
+    }
+
+    input#submit {
+      width: 350px;
+      cursor: pointer;
+      background: rgba(253, 17, 17, 0.829);
+      color: rgb(255, 217, 0);
+      font-size: 24px;
+    }
+
+    #BackToTop {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.829);
+      font-size: 50px;
+    }
   </style>
 </head>
 
 <body class="white-text new-font blackback">
   <div>
     <!- общий>
-      <div class="block1 up">
+      <div class="block1 up" id="BackInTop">
         <!- ограничение ширины>
           <ul class="nav white-text padding-inline-start: 0%;">
-            <li><span class="bold-text firstP-text">Дмитрий<br>Бумагин</span></li>
-            <li>Опыт работы</li>
-            <li>Достижения</li>
-            <li>Сильные стороны</li>
-            <li>Личное</li>
-            <li>Контакт</li>
+            <li;><span class="bold-text firstP-text">Дмитрий<br>Бумагин</span></li>
+            <li><a href="#first">Опыт работы</a></li>
+            <li><a href="#second">Профподготовка</a></li>
+            <li><a href="#three">Сильные стороны</a></li>
+            <li><a href="#four">Личное</a></li>
+            <li><a href="#five">Контакт</a></li>
           </ul>
           <p align="center"><img src="https://c.wallhere.com/photos/61/b9/monochrome-100096.jpg!d" width="600"
               height="400" alt="Портрет">
           </p>
-          <h1 class="white-text">Бизнес-аналитик с <span class="B-text">Б</span>ольшой буквы</h1>
+          <h1 class="white-text" align="center">Бизнес-аналитик с <span class="B-text">Б</span>ольшой буквы</h1>
           <p class="white-text">
-            Бизнес-аналитик 1С. На данный момент работаю в логистической сфере деятельности.
+            Бизнес-аналитик 1С. На  данный момент работаю в крупной компании, занимающейся логистической деятельностью.
           </p>
           <p class="white-text">
             Развиваю крупнейшую, государственную компанию <span class="bold-text">ООО"Почта России"</span>
@@ -178,24 +224,26 @@
       </div>
 
 
-      <div class="block3">
+      <div class="block3" id="first">
         <h2>Опыт работы</h2>
         <ol class="exp">
           <li>
-            <span class="bold-text">Январь 2017 - Январь 2019: </span>"Движение - развитие предприятия"
+            <span class="bold-text">Февраль 2016 - Январь 2019: </span>"Движение - развитие предприятия"/ <u>Ведущий
+              специалист 1С</u>
           </li>
           <li>
-            <span class="bold-text">Январь 2019 - май 2021: </span>"Курьер сервис экспресс"
+            <span class="bold-text">Январь 2019 - май 2021: </span>"Курьер сервис экспресс"/<u>Специалист по
+              бизнес-процессам</u>
           </li>
           <li>
-            <span class="bold-text">Май 2021 - наст. время: </span>"Почта России"
+            <span class="bold-text">Май 2021 - наст. время: </span>"Почта России"/<u>Бизнес-аналитик</u>
           </li>
         </ol>
       </div>
 
 
-      <div class="block4">
-        <h2 style="margin-top: 10px;">Мои самые большие достижения</h2>
+      <div class="block4" id="second">
+        <h2 style="margin-top: 10px;">Профессиональная подготовка</h2>
         <p>Главные профессиональные достижения:</p>
         <ul class="achievements">
           <li>Пройдены профессиональные курсы по 1С </li>
@@ -204,8 +252,8 @@
           <li>Получены сертификаты повышающие квалификацию</li>
         </ul>
       </div>
-      <div class="block2">
-        <p align="center">Рубрика: <i><span class="rubrica">"Blood and sweat"</span></i></p><br>
+      <div class="block2" align="center">
+       <p align="center">Рубрика: <i><span class="rubrica">"Blood and sweat"</span></i></p><br>
         <img class="certif"          src="./Профессионал Платформа_page-0001.jpg"          alt=""> 
         <img class="certif"          src="./Сертифика БУХ_page-0001.jpg"          alt="">
         <img class="certif"          src="./Сертификат ЗУП_page-0001.jpg"          alt="">
@@ -214,7 +262,7 @@
         <img class="certif"          src="./Сертификат Контур.jpg"          alt="">
       </div>
 
-      <div class="block1">
+      <div class="block1" id="three" >
         <h2>Мои сильные качества</h2>
         <ul class="str-points">
           <li>Дисциплинированность</li>
@@ -224,11 +272,11 @@
           <li>Коммуникабельность</li>
           <li>Нацеленность на результат</li>
           <li>Желание расти и развиваться</li>
-          </ul>
+        </ul>
       </div>
 
       <div class="hands-bg">
-        <div class="block1">
+        <div class="block1" align="center">
           <h2>Мои значимые выражения</h2>
           <p>
             <i class="virash">«Как бы не было, уже было...»</i><br>
@@ -239,26 +287,41 @@
         </div>
       </div>
 
-      <div class="block1">
+      <div class="block1 virash" id="four" align="center">
         <h2>Коротко обо мне</h2>
         <p>
-          Учусь, развиваюсь. Надеюсь, что мои беcсонные ночи дадут результат:
+          Веду здоровый образ жизни.</i>  <br>
+          Коммуникабельнный<br>
+          Найду поход к любому заказчику.<br>
+          Быстро осваиваю новые направления деятельности, овладеваю новыми навыками.<br>
+          Пунктуальный.<br>
+          Не испытываю сложностей при налаживании контакта с коллегами<br>
+          Владею техническим английским языком. <br>
+          Обладаю глубокими знаниями в автоматизации бизнес-процесса.
         </p>
       </div>
       <p align="center">
-        <img
-          src="https://mobimg.b-cdn.net/v3/fetch/df/df31a508e352c47e9aa9290e99c40929.jpeg"
-          width="600" alt="Конец" class="img-right">
+        <img src="https://mobimg.b-cdn.net/v3/fetch/df/df31a508e352c47e9aa9290e99c40929.jpeg" width="600" alt="Конец"
+          class="img-right">
       </p>
 
-      <div class="block1">
+      <div class="block1" id="five">
         <h2>Контакт</h2>
-        <form action="">
-          <input type="text" name="" id="">
+        <form action="/" method="POST" id="contact-form">
+          <input type="text" name="FIO" placeholder="ФИО">
+          <input type="email" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Сообщение"></textarea>
+          <input type="submit" name="submit" id="submit" value="Отправить">
         </form>
+        <a href="#BackInTop" id="BackToTop">
+          <img src="https://as2.ftcdn.net/v2/jpg/02/55/23/73/500_F_255237325_RbMvy65niGfSJRHUNbYH3633jF1ZaM6r.jpg"
+            width="50"> </a>
       </div>
+
+
       <div class="block1">
-        <p align="center" class="inst-text"><a class="inst-text" href="https://www.instagram.com/itea.online/" title="Истаграмм">Сделано при подержки ITEA</a></p>
+        <p align="center" class="inst-text"><a class="inst-text" href="https://www.instagram.com/itea.online/"
+            title="Истаграмм">Сделано на обучение в ITEA</a></p>
       </div>
   </div>
 </body>
